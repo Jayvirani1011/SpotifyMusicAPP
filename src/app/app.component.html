@@ -1,0 +1,35 @@
+<div>
+  <mat-toolbar class="font-class">
+      <img src="assets/spotify.png" alt="" class="img-style">
+      <!-- <span style="margin-left: 15px;">Music App</span> -->
+      <div>
+          <ul class="horizontal-list">
+              <li>
+                  <span><a routerLink="/home" routerLinkActive="active">Home</a></span>
+              </li>
+              <li>
+                <span><a routerLink="/artists" routerLinkActive="active">Artists</a></span>
+            </li>
+          </ul>
+      </div>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+      </button>
+  </mat-toolbar>
+</div>
+<!-- <nav>
+  <div>
+      <div id="navbarNavDropdown">
+          <ul >
+              <li>
+                  <a routerLink="/newHome" routerLinkActive="active">New Home</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav> -->
+<router-outlet></router-outlet>
